@@ -1,0 +1,16 @@
+[service]
+  host = "0.0.0.0"
+  port = 8888
+
+[joystick]
+  index = 1
+
+[[joystick.buttons]]
+  index = 9
+  inverted = true
+
+[[joystick.axes]]
+  index = 0
+  inverted = true
+  max = 3280
+  min = 4

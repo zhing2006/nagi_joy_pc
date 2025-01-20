@@ -1,0 +1,16 @@
+[package]
+name = "nagi_joy_pc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "*", default-features = false, features = ["std"] }
+tokio = { version = "*", default-features = false, features = ["rt", "signal", "net", "macros"] }
+time = { version = "*" }
+log = { version = "*", default-features = false, features = ["std"] }
+simplelog = { version = "*", default-features = false, features = ["termcolor", "local-offset"]}
+serde = { version = "*", default-features = false, features = ["derive"] }
+toml = { version = "*", default-features = false, features = ["parse"] }
+# serde = { version = "*", default-features = false, features = ["derive"] }
+
+vjoy = { path = "./vjoy" }
